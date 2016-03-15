@@ -9,8 +9,8 @@ Note, maven must be installed and configured
   1. from the storm directory `cd examples/storm-starter`
   1. `mvn clean install -DskipTests=true`
 2. Compile the wordcount example
-  2. mvn compile exec:java -Dstorm.topology=storm.starter.WordCountTopology
-
+  2. `mvn compile exec:java -Dstorm.topology=storm.starter.WordCountTopology` 
+  1. Or use `bin/storm jar examples/storm-starter/target/storm-*.jar  storm.starter.ExclamationTopology`
 # Questions
 
 1. Where does the data come from?
