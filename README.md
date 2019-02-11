@@ -1,5 +1,3 @@
-# FourthLab
+# STORM
 
-Storm
-
-See the labfour file
+See the labfour file for details
