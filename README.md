@@ -2,17 +2,33 @@
 
 This lab asks you to try and set up a simple Storm topology.
 
-Note, maven must be installed and configured
+<!--Note, maven must be installed and configured-->
 
-1. Download Storm <http://www.apache.org/dyn/closer.lua/storm/apache-storm-0.10.0/apache-storm-0.10.0.tar.gz>
-2. Install the examples
-  1. from the storm directory `cd examples/storm-starter`
-  1. `mvn clean install -DskipTests=true`
-2. Compile the wordcount example
-  2. `mvn compile exec:java -Dstorm.topology=storm.starter.WordCountTopology` 
-  1. Or use `bin/storm jar examples/storm-starter/target/storm-*.jar  storm.starter.ExclamationTopology`
-# Questions
+# Storm: install and run your first topology
 
+1. Download binary from the internet (using a mirror site)
+
+`$ wget https://mirrors.whoishostingthis.com/apache/storm/apache-storm-2.2.0/apache-storm-2.2.0-src.tar.gz`
+
+2. Unzip STORM binary (in current directory, use `$ -C ~/<dirname> ` to unzip in a different directory `<dirname>` under user home folder)
+
+`$ tar -xvzf apache-storm-2.2.0-src.tar.gz `
+
+3. If you do not have Maven installed and configure:
+  - on Unix/Linux: `$ sudo apt-get install maven`
+  - on Mac: `$ brew install maven`
+  - check it installed correctly: `$ mvn -version`
+  
+4. Go into the storm-starter project within the examples folder: `$ cd examples/storm-starter`
+
+5. Compile the jar files: `$ mvn clean install -DskipTests=true`
+   - Note: it should take a few minutes, and you’ll see a lot of output with "Build Success" in the end
+
+6. Run the workdcount topology example (previously compiled)
+  - Locally: `$ mvn compile exec:java -Dstorm.topology=storm.starter.WordCountTopology` 
+  - On a cluster: `$ bin/storm jar examples/storm-starter/target/storm-*.jar  storm.starter.ExclamationTopology`
+
+<!-- # Questions
 1. Where does the data come from?
 2. How would you modify this code to make it case-insensitive?
-
+-->
