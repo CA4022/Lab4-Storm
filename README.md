@@ -28,7 +28,12 @@ This lab asks you to try and set up a simple Storm topology.
   - Locally: `$ mvn compile exec:java -Dstorm.topology=storm.starter.WordCountTopology` 
   - On a cluster: `$ bin/storm jar examples/storm-starter/target/storm-*.jar  storm.starter.ExclamationTopology`
 
-<!-- # Questions
+## Note that to run a topology on a cluster you first need to run the cluster
+Check how to deploy Storm in production in the final part of [this tutorial](http://www.haroldnguyen.com/blog/2015/01/setting-up-storm-and-running-your-first-topology/)
+
+
+<!-- see tutorial at http://www.haroldnguyen.com/blog/2015/01/setting-up-storm-and-running-your-first-topology/
+# Questions
 1. Where does the data come from?
 2. How would you modify this code to make it case-insensitive?
 -->
