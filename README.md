@@ -41,13 +41,13 @@ Apart from a pom.xml file, you also need Java source code for Maven to do its ma
    - Maven will also build a .jar or .war file, depending on your project, that lives in the "target" folder.
 
 Your project will look like this:
-+ storm-starter/src/jvm/org/apache/storm/starter/WordCountTopology.java
-+ storm-starter/target/classes/org/apache/storm/starter/WordCountTopology.class (after 'mvn compile')
-+ storm-starter/target/storm-starter-2.2.0.jar (upon mvn package or mvn install)
++ `$ storm-starter/src/jvm/org/apache/storm/starter/WordCountTopology.java`
++ `$ storm-starter/target/classes/org/apache/storm/starter/WordCountTopology.class` (after 'mvn compile')
++ `$ storm-starter/target/storm-starter-2.2.0.jar` (upon mvn package or mvn install)
 
 
 
-<!-- see maven details at https://www.marcobehler.com/guides/mvn-clean-install-a-short-guide-to-maven-->
+<!-- see maven details at https://www.marcobehler.com/guides/mvn-clean-install-a-short-guide-to-maven
 # Questions
 1. Where does the data come from?
 2. How would you modify this code to make it case-insensitive?
