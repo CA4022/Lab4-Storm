@@ -25,8 +25,10 @@ This lab asks you to try and set up a simple Storm topology.
    - Note: it should take a few minutes, and you’ll see a lot of output with "Build Success" in the end
 
 6. Run the workdcount topology example (previously compiled)
-  - Locally: `$ mvn compile exec:java -Dstorm.topology=storm.starter.WordCountTopology` 
-  - On a cluster: `$ bin/storm jar examples/storm-starter/target/storm-*.jar  storm.starter.ExclamationTopology`
+  - `$ mvn compile exec:java -Dstorm.topology=storm.starter.WordCountTopology` 
+
+Let's now have a look at the details of what happened when you run the topology, where are the files and what do they look like [here](http://www.haroldnguyen.com/blog/2015/01/setting-up-storm-and-running-your-first-topology/)
+<!--On a cluster: `$ bin/storm jar examples/storm-starter/target/storm-*.jar  storm.starter.ExclamationTopology`-->
 
 ## Note that to run a topology on a cluster you first need to run the cluster
 Check how to deploy Storm in production in the final part of [this tutorial](http://www.haroldnguyen.com/blog/2015/01/setting-up-storm-and-running-your-first-topology/)
