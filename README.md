@@ -27,11 +27,11 @@ This lab asks you to try and set up a simple Storm topology.
 6. Run the workdcount topology example (previously compiled)
   - `$ mvn compile exec:java -Dstorm.topology=storm.starter.WordCountTopology` 
 
-Let's now have a look at the details of what happened when you run the topology, where are the files and what do they look like [here](http://www.haroldnguyen.com/blog/2015/01/setting-up-storm-and-running-your-first-topology/)
+Let's now have a look at the details of what happened when you run the topology, where are the files and what do they look like [here](https://www.cnblogs.com/oxspirt/p/8179070.html)
 <!--On a cluster: `$ bin/storm jar examples/storm-starter/target/storm-*.jar  storm.starter.ExclamationTopology`-->
 
 ## Note that to run a topology on a cluster you first need to run the cluster
-Check how to deploy Storm in production in the final part of [this tutorial](http://www.haroldnguyen.com/blog/2015/01/setting-up-storm-and-running-your-first-topology/)
+Check how to deploy Storm in production in the final part of [this tutorial](https://www.cnblogs.com/oxspirt/p/8179070.html)
 
 ## Note on Maven sources and target folders
 Technically, any directory that contains a pom.xml file is also a valid Maven project. A pom.xml file contains everything needed to describe your Java project.
