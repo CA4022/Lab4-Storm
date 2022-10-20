@@ -8,11 +8,11 @@ This lab asks you to try and set up a simple Storm topology.
 
 1. Download binary from the internet (using a mirror site)
 
-`$ wget https://mirrors.whoishostingthis.com/apache/storm/apache-storm-2.2.0/apache-storm-2.2.0-src.tar.gz`
+`$ wget https://dlcdn.apache.org/storm/apache-storm-2.4.0/apache-storm-2.4.0-src.tar.gz`
 
 2. Unzip STORM binary (in current directory, use `$ -C ~/<dirname> ` to unzip in a different directory `<dirname>` under user home folder)
 
-`$ tar -xvzf apache-storm-2.2.0-src.tar.gz `
+`$ tar -xvzf apache-storm-2.4.0-src.tar.gz `
 
 3. If you do not have Maven installed and configure:
   - on Unix/Linux: `$ sudo apt-get install maven`
