@@ -4,7 +4,7 @@ This lab asks you to try and set up a simple Storm topology.
 
 <!--Note, maven must be installed and configured-->
 
-# Storm: install and run your first topology
+# Storm: install and compile the jar files run your first topology
 
 1. Download binary from the internet (using a mirror site)
 
@@ -18,14 +18,26 @@ This lab asks you to try and set up a simple Storm topology.
   - on Unix/Linux: `$ sudo apt-get install maven`
   - on Mac: `$ brew install maven`
   - check it installed correctly: `$ mvn -version`
-  
-4. Go into the storm-starter project within the examples folder: `$ cd examples/storm-starter`
 
-5. Compile the jar files: `$ mvn clean install -DskipTests=true`
+# Run your first Storm topology with Maven: Wordcount
+
+
+
+1. Go into the storm-starter project within the examples folder: `$ cd examples/storm-starter`
+
+2. Compile and build the jar files: `$ mvn clean install -DskipTests=true`
    - Note: it should take a few minutes, and you’ll see a lot of output with "Build Success" in the end
 
-6. Run the workdcount topology example (previously compiled)
-  - `$ mvn compile exec:java -Dstorm.topology=storm.starter.WordCountTopology` 
+3. Compile the wordcount example project with maven:
+
+- `$ mvn compile -Dstorm.topology=storm.starter.WordCountTopology -Dexec.mainClass="WordCountTopology"`
+
+- `$ mvn compile exec:java -Dstorm.topology=storm.starter.WordCountTopology -Dexec.mainClass="WordCountTopology"`
+
+4. Run the workdcount topology example, previously compiled, in *local* mode
+  - change to storm root directory and check that your environmental variables are all set 
+  - `./bin/storm local ./examples/storm-starter/target/storm-starter-2.4.0.jar org.apache.storm.starter.WordCountTopology ` 
+  
 
 Let's now have a look at the details of what happened when you run the topology, where are the files and what do they look like [here](https://www.cnblogs.com/oxspirt/p/8179070.html)
 <!--On a cluster: `$ bin/storm jar examples/storm-starter/target/storm-*.jar  storm.starter.ExclamationTopology`-->
